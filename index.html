@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="row">
+
+<div id="books" class="col-12">
+<form id="form">
+    <p class="top-text">Search efter the book name:</p>
+    <input type="text" id="input">
+    <button type="submit">Search</button>
+    <p>or</p>
+    <button><a href="movie.html">search a movie</a></button>
+</form>
+
+</div>
+<div id="result">
+
+    </div>
+
+    <div id="maps" class="col-12">
+
+    </div>
+</div>
+<!--Include jquery-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABPIOrxQIumoxYCtriM0TAP1qWVLEaQhA&callback=initMap">
+    </script>
+    <!--javascript to map-->
+<script src="app/app.js"></script>
+<!-- till books-->
+<script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <!--jQuery to books-->
+<script src="app/json.js"></script>
+</body>
+</html>
